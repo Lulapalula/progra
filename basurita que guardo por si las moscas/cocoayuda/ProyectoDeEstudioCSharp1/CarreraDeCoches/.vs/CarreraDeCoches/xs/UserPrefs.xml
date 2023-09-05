@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{B0EABD6D-F363-455C-A07B-C6AAF5369CA9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Auto.cs">
+    <Files>
+      <File FileName="Auto.cs" Line="1" Column="1" />
+      <File FileName="Color.cs" Line="1" Column="1" />
+      <File FileName="PistaCarreras.cs" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CarreraDeCoches" expanded="True">
+            <Node name="CarreraDeCoches" expanded="True">
+              <Node name="Auto.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CarreraDeCoches PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
