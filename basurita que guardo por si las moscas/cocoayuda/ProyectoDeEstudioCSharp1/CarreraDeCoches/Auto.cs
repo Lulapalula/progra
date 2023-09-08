@@ -24,7 +24,7 @@ namespace CarreraDeCoches //declaraciòn de espacio de nombres CarreraDeCoches
                 Gasolina = Gasolina - 0.1f;
                 Console.WriteLine("Arrancando " + Modelo + ", le queda " + Gasolina + "L de gas.");
             }
-            else////inicio de bloque condicional else dentro del metodo arrancar; No tiene gas 
+            else//inicio de bloque condicional else dentro del metodo arrancar; No tiene gas 
             {
                 Console.WriteLine(Modelo + " no tiene gas. No se puede arrancar.");
             }
@@ -38,22 +38,24 @@ namespace CarreraDeCoches //declaraciòn de espacio de nombres CarreraDeCoches
             Gasolina = Gasolina + cantidad; //uso del atributo
             Console.WriteLine("Se puso gas a  " + Modelo + ". Ahora tiene " + Gasolina + "L.");
         }
-
+        //Declaración de método Acelarar dentro de clase Auto
+        //Declaración de parametro cantidad dentro de método Acelerar
         public void Acelerar(float cantidad)
         {
-            if (Gasolina > 0)
+            if (Gasolina > 0) //inicio de bloque condicional if dentro del metodo arrancar; el coche si tiene gas
             {
                 Gasolina = cantidad * 1/10f;
                 Km = Km + cantidad;
                 Console.WriteLine("El " + Modelo + " a pasado de 0 km/h a " + Km + "km/h" + " y a perdido " + Gasolina + " L de Gas");
             }
 
-            else
+            else //inicio de bloque condicional else dentro del metodo arrancar; No tiene gas 
             { 
                 Console.WriteLine("El vehiculo no ha podido Acelerar");
             }
         }
 
+        //Declaración de método Frenar dentro de clase Auto
         public void Frenar()
         {
             Console.WriteLine("El " + Modelo + " a frenado repentinamente por fallas en el motor");
