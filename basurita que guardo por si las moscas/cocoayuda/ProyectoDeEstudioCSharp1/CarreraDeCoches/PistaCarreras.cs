@@ -12,23 +12,23 @@ namespace CarreraDeCoches
         public float Longitud;
 
 
-        //Metodo que recibe 2 parametros 
+        //Declaración de método competir dentro de clase PistaCarreras
         public void Competir(Auto auto1, Auto auto2) 
-        {//Metodo del bloque
+        {
 
             Console.WriteLine("Iniciando competencia entre " + auto1.Modelo + " contra " + auto2.Modelo);
 
-            if (auto1.Velocidad > auto2.Velocidad)
+            if (auto1.Velocidad > auto2.Velocidad)  //inicio de bloque condicional if dentro del metodo Competir
             {
                 Console.WriteLine("Gano" + auto1.Modelo);
             }
 
-            else if (auto2.Velocidad > auto1.Velocidad)
+            else if (auto2.Velocidad > auto1.Velocidad) //inicio de bloque condicional else dentro del metodo Competir
             {
                 Console.WriteLine("Gano" + auto2.Modelo);
             }
 
-            else 
+            else //inicio de bloque condicional else dentro del metodo competir
             {
                 Console.WriteLine("Hubo un empate");
             }

@@ -15,9 +15,9 @@ namespace CarreraDeCoches //declaraciòn de espacio de nombres CarreraDeCoches
         public float Gasolina;//Declaración de atributo Gasolina dentro de clase Auto
         public float Km; //Declaración de atributo Km dentro de clase Auto
 
-        
 
-        public void Arrancar()// declaracion de metodo 
+        //Declaración de método Arrancar dentro de clase Auto
+        public void Arrancar()
         {
             if (Gasolina > 0)//inicio de bloque condicional if dentro del metodo arrancar; el coche si tiene gas
             {
