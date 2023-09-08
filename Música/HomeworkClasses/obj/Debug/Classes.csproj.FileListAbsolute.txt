@@ -1,0 +1,4 @@
+C:\Users\hp\Documents\GitHub\progra\Música\HomeworkClasses\obj\Debug\Classes.csproj.AssemblyReference.cache
+C:\Users\hp\Documents\GitHub\progra\Música\HomeworkClasses\obj\Debug\Classes.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\GitHub\progra\Música\HomeworkClasses\obj\Debug\HomeworkClasses.exe
+C:\Users\hp\Documents\GitHub\progra\Música\HomeworkClasses\obj\Debug\HomeworkClasses.pdb
