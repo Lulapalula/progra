@@ -1,0 +1,21 @@
+C:\Users\AinsGolden\Documents\GitHub\ProyectosProgra\ClasesPrincipiante\ProyectoDeEstudioCSharp1\CarreraDeCoches\obj\Debug\CarreraDeCoches.csproj.AssemblyReference.cache
+C:\Users\AinsGolden\Documents\GitHub\ProyectosProgra\ClasesPrincipiante\ProyectoDeEstudioCSharp1\CarreraDeCoches\obj\Debug\CarreraDeCoches.csproj.CoreCompileInputs.cache
+C:\Users\AinsGolden\Documents\GitHub\ProyectosProgra\ClasesPrincipiante\ProyectoDeEstudioCSharp1\CarreraDeCoches\bin\Debug\CarreraDeCoches.exe.config
+C:\Users\AinsGolden\Documents\GitHub\ProyectosProgra\ClasesPrincipiante\ProyectoDeEstudioCSharp1\CarreraDeCoches\bin\Debug\CarreraDeCoches.exe
+C:\Users\AinsGolden\Documents\GitHub\ProyectosProgra\ClasesPrincipiante\ProyectoDeEstudioCSharp1\CarreraDeCoches\bin\Debug\CarreraDeCoches.pdb
+C:\Users\AinsGolden\Documents\GitHub\ProyectosProgra\ClasesPrincipiante\ProyectoDeEstudioCSharp1\CarreraDeCoches\obj\Debug\CarreraDeCoches.exe
+C:\Users\AinsGolden\Documents\GitHub\ProyectosProgra\ClasesPrincipiante\ProyectoDeEstudioCSharp1\CarreraDeCoches\obj\Debug\CarreraDeCoches.pdb
+C:\Users\javier.zamitiz\Documents\GitHub\ProyectosProgra\ClasesPrincipiante\ProyectoDeEstudioCSharp1\CarreraDeCoches\bin\Debug\CarreraDeCoches.exe.config
+C:\Users\javier.zamitiz\Documents\GitHub\ProyectosProgra\ClasesPrincipiante\ProyectoDeEstudioCSharp1\CarreraDeCoches\bin\Debug\CarreraDeCoches.exe
+C:\Users\javier.zamitiz\Documents\GitHub\ProyectosProgra\ClasesPrincipiante\ProyectoDeEstudioCSharp1\CarreraDeCoches\bin\Debug\CarreraDeCoches.pdb
+C:\Users\javier.zamitiz\Documents\GitHub\ProyectosProgra\ClasesPrincipiante\ProyectoDeEstudioCSharp1\CarreraDeCoches\obj\Debug\CarreraDeCoches.csproj.AssemblyReference.cache
+C:\Users\javier.zamitiz\Documents\GitHub\ProyectosProgra\ClasesPrincipiante\ProyectoDeEstudioCSharp1\CarreraDeCoches\obj\Debug\CarreraDeCoches.csproj.CoreCompileInputs.cache
+C:\Users\javier.zamitiz\Documents\GitHub\ProyectosProgra\ClasesPrincipiante\ProyectoDeEstudioCSharp1\CarreraDeCoches\obj\Debug\CarreraDeCoches.exe
+C:\Users\javier.zamitiz\Documents\GitHub\ProyectosProgra\ClasesPrincipiante\ProyectoDeEstudioCSharp1\CarreraDeCoches\obj\Debug\CarreraDeCoches.pdb
+C:\Users\hp\Documents\GitHub\progra\basurita que guardo por si las moscas\cocoayuda\ProyectoDeEstudioCSharp1\CarreraDeCoches\bin\Debug\CarreraDeCoches.exe.config
+C:\Users\hp\Documents\GitHub\progra\basurita que guardo por si las moscas\cocoayuda\ProyectoDeEstudioCSharp1\CarreraDeCoches\bin\Debug\CarreraDeCoches.exe
+C:\Users\hp\Documents\GitHub\progra\basurita que guardo por si las moscas\cocoayuda\ProyectoDeEstudioCSharp1\CarreraDeCoches\bin\Debug\CarreraDeCoches.pdb
+C:\Users\hp\Documents\GitHub\progra\basurita que guardo por si las moscas\cocoayuda\ProyectoDeEstudioCSharp1\CarreraDeCoches\obj\Debug\CarreraDeCoches.csproj.AssemblyReference.cache
+C:\Users\hp\Documents\GitHub\progra\basurita que guardo por si las moscas\cocoayuda\ProyectoDeEstudioCSharp1\CarreraDeCoches\obj\Debug\CarreraDeCoches.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\GitHub\progra\basurita que guardo por si las moscas\cocoayuda\ProyectoDeEstudioCSharp1\CarreraDeCoches\obj\Debug\CarreraDeCoches.exe
+C:\Users\hp\Documents\GitHub\progra\basurita que guardo por si las moscas\cocoayuda\ProyectoDeEstudioCSharp1\CarreraDeCoches\obj\Debug\CarreraDeCoches.pdb
