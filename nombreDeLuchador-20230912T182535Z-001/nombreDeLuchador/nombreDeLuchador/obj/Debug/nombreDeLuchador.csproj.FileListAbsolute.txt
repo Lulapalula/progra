@@ -1,0 +1,14 @@
+C:\Users\Diana\Documents\GitHub\proyectosprogra\nombreDeLuchador\nombreDeLuchador\bin\Debug\nombreDeLuchador.exe.config
+C:\Users\Diana\Documents\GitHub\proyectosprogra\nombreDeLuchador\nombreDeLuchador\bin\Debug\nombreDeLuchador.exe
+C:\Users\Diana\Documents\GitHub\proyectosprogra\nombreDeLuchador\nombreDeLuchador\bin\Debug\nombreDeLuchador.pdb
+C:\Users\Diana\Documents\GitHub\proyectosprogra\nombreDeLuchador\nombreDeLuchador\obj\Debug\nombreDeLuchador.csproj.AssemblyReference.cache
+C:\Users\Diana\Documents\GitHub\proyectosprogra\nombreDeLuchador\nombreDeLuchador\obj\Debug\nombreDeLuchador.csproj.CoreCompileInputs.cache
+C:\Users\Diana\Documents\GitHub\proyectosprogra\nombreDeLuchador\nombreDeLuchador\obj\Debug\nombreDeLuchador.exe
+C:\Users\Diana\Documents\GitHub\proyectosprogra\nombreDeLuchador\nombreDeLuchador\obj\Debug\nombreDeLuchador.pdb
+C:\Users\diana.roqueh\Desktop\proyectosprogra-main\nombreDeLuchador\nombreDeLuchador\bin\Debug\nombreDeLuchador.exe.config
+C:\Users\diana.roqueh\Desktop\proyectosprogra-main\nombreDeLuchador\nombreDeLuchador\bin\Debug\nombreDeLuchador.exe
+C:\Users\diana.roqueh\Desktop\proyectosprogra-main\nombreDeLuchador\nombreDeLuchador\bin\Debug\nombreDeLuchador.pdb
+C:\Users\diana.roqueh\Desktop\proyectosprogra-main\nombreDeLuchador\nombreDeLuchador\obj\Debug\nombreDeLuchador.csproj.AssemblyReference.cache
+C:\Users\diana.roqueh\Desktop\proyectosprogra-main\nombreDeLuchador\nombreDeLuchador\obj\Debug\nombreDeLuchador.csproj.CoreCompileInputs.cache
+C:\Users\diana.roqueh\Desktop\proyectosprogra-main\nombreDeLuchador\nombreDeLuchador\obj\Debug\nombreDeLuchador.exe
+C:\Users\diana.roqueh\Desktop\proyectosprogra-main\nombreDeLuchador\nombreDeLuchador\obj\Debug\nombreDeLuchador.pdb
