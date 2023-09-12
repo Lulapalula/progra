@@ -1,0 +1,7 @@
+C:\Users\hp\Documents\GitHub\progra\Generador de nombres\nombreDeJuego\nombreDeJuego\bin\Debug\nombreDeLuchador.exe.config
+C:\Users\hp\Documents\GitHub\progra\Generador de nombres\nombreDeJuego\nombreDeJuego\bin\Debug\nombreDeLuchador.exe
+C:\Users\hp\Documents\GitHub\progra\Generador de nombres\nombreDeJuego\nombreDeJuego\bin\Debug\nombreDeLuchador.pdb
+C:\Users\hp\Documents\GitHub\progra\Generador de nombres\nombreDeJuego\nombreDeJuego\obj\Debug\nombreDeJuego.csproj.AssemblyReference.cache
+C:\Users\hp\Documents\GitHub\progra\Generador de nombres\nombreDeJuego\nombreDeJuego\obj\Debug\nombreDeJuego.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\GitHub\progra\Generador de nombres\nombreDeJuego\nombreDeJuego\obj\Debug\nombreDeLuchador.exe
+C:\Users\hp\Documents\GitHub\progra\Generador de nombres\nombreDeJuego\nombreDeJuego\obj\Debug\nombreDeLuchador.pdb
