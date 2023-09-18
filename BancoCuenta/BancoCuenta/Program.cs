@@ -15,7 +15,7 @@ namespace BancoCuenta
             CuentaBancaria miCuenta = new CuentaBancaria();
 
             // Establecer el PIN
-            miCuenta.EstablecerPIN(); 
+            miCuenta.EstablecerPIN(1234); 
 
             // Acceder al saldo (esto funcionará porque se estableció el PIN)
             int saldoActual = miCuenta.Saldo;
