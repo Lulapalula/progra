@@ -3,47 +3,40 @@
 public class CuentaBancaria
 {
     // Atributos privados
-    private int saldo;            // Almacena el saldo de la cuenta bancaria como un entero.
+    private double saldo;            // Almacena el saldo de la cuenta bancaria como un entero.
     private int pin;              // Almacena el PIN de la cuenta bancaria como un entero.
-    private bool pinEstablecido;  // Indica si el PIN de la cuenta bancaria está establecido.
 
-    // Constructor
-    public CuentaBancaria()
+    
+    public int getPin()
     {
-        saldo = 0;               // Inicializa el saldo en 0 cuando se crea una instancia de la cuenta.
-        pinEstablecido = false;  // Inicializa la variable que indica si el PIN está establecido en "false".
+        Console.WriteLine("Pin establecido correctamente");
+        return pin;
     }
 
+    public void setPin(int nuevoPin)
+    {
+        pin = nuevoPin;
+    }
     // Propiedad para el saldo
-    public int Saldo
+    public double getSaldo(int pinIngresado)
     {
-        get
+        if (pin == pinIngresado)
         {
-            if (!pinEstablecido)
-            {
-                Console.WriteLine("El PIN no está establecido. No se puede acceder al saldo.");
-                return 0;
-            }
-            return saldo;  // Devuelve el valor del saldo si el PIN está establecido.
+            Console.WriteLine($"Su saldo es: {saldo}");
+            return saldo;
         }
-        set
+
+        else
         {
-            if (pinEstablecido)
-            {
-                saldo = value;  // Establece el valor del saldo si el PIN está establecido.
-            }
-            else
-            {
-                Console.WriteLine("El PIN no está establecido. No se puede cambiar el saldo.");
-            }
+            Console.WriteLine("PIN incorrecto, no puedes ver el saldo. Intenta de nuevo");
+            return -1;
         }
+        
     }
 
-    // Método para establecer el PIN
-    public void EstablecerPIN(int nuevoPIN)
+    public void setSaldo()
     {
-        pin = nuevoPIN;           // Asigna el nuevo PIN proporcionado al atributo "pin".
-        pinEstablecido = true;    // Marca que el PIN está establecido como "true".
+        saldo = 10.50;
     }
 }
 
