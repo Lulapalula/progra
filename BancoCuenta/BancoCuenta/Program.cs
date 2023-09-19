@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 
+using System;
+
 namespace BancoCuenta
 {
     class Program
@@ -15,7 +17,7 @@ namespace BancoCuenta
             CuentaBancaria miCuenta = new CuentaBancaria();
 
             // Establecer el PIN
-            miCuenta.EstablecerPIN(1234); 
+            miCuenta.EstablecerPIN(1234); // Cambia "1234" por el PIN deseado
 
             // Acceder al saldo (esto funcionará porque se estableció el PIN)
             int saldoActual = miCuenta.Saldo;
@@ -32,3 +34,4 @@ namespace BancoCuenta
         }
     }
 }
+
