@@ -8,6 +8,8 @@ public class ControladorJugador : MonoBehaviour
     public float velocidadCaminar = 5;
     private Rigidbody2D miCuerpo;
     private Animator miAnimador;
+    public bool enPiso = false;
+    private int contadorSaltos = 2;
 
 
     // Start is called before the first frame update
@@ -20,6 +22,9 @@ public class ControladorJugador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //Lo primero que hago en el update es detectar piso
+        detectarPiso();
         float velVert = miCuerpo.velocity.y;
 
         float movHoriz = Input.GetAxis("Horizontal");
@@ -48,9 +53,30 @@ public class ControladorJugador : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
-            miCuerpo.AddForce( new Vector3(0,fuerzaSalto,0),ForceMode2D.Impulse);             
+            if (enPiso || contadorSaltos > 0)
+            {
+                miCuerpo.velocity = new Vector2(miCuerpo.velocity.x, fuerzaSalto);
+                contadorSaltos--; // Disminuir el contador de saltos.
+            }
         }
 
+        else
+
         miAnimador.SetFloat("Vel_VERT", velVert);
+    } //fin update
+
+    void detectarPiso()
+    {
+        {
+            enPiso = Physics2D.Raycast(
+                transform.position, //desde donde sale el rayo
+                Vector2.down, //en que direcciòn
+                0.1f //que tan laaaaaaaaaaaaaaaargo
+                );
+            if (enPiso)
+            {
+                contadorSaltos = 1; //reinicio
+            }
+        }
     }
-}
+}//fin de clase
