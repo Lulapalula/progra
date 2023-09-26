@@ -1,0 +1,16 @@
+C:\Users\isabella.ramirezv\source\repos\PracticasConstructores\PracticasConstructores\bin\Debug\net5.0\PracticasConstructores.exe
+C:\Users\isabella.ramirezv\source\repos\PracticasConstructores\PracticasConstructores\bin\Debug\net5.0\PracticasConstructores.deps.json
+C:\Users\isabella.ramirezv\source\repos\PracticasConstructores\PracticasConstructores\bin\Debug\net5.0\PracticasConstructores.runtimeconfig.json
+C:\Users\isabella.ramirezv\source\repos\PracticasConstructores\PracticasConstructores\bin\Debug\net5.0\PracticasConstructores.runtimeconfig.dev.json
+C:\Users\isabella.ramirezv\source\repos\PracticasConstructores\PracticasConstructores\bin\Debug\net5.0\PracticasConstructores.dll
+C:\Users\isabella.ramirezv\source\repos\PracticasConstructores\PracticasConstructores\bin\Debug\net5.0\ref\PracticasConstructores.dll
+C:\Users\isabella.ramirezv\source\repos\PracticasConstructores\PracticasConstructores\bin\Debug\net5.0\PracticasConstructores.pdb
+C:\Users\isabella.ramirezv\source\repos\PracticasConstructores\PracticasConstructores\obj\Debug\net5.0\PracticasConstructores.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isabella.ramirezv\source\repos\PracticasConstructores\PracticasConstructores\obj\Debug\net5.0\PracticasConstructores.AssemblyInfoInputs.cache
+C:\Users\isabella.ramirezv\source\repos\PracticasConstructores\PracticasConstructores\obj\Debug\net5.0\PracticasConstructores.AssemblyInfo.cs
+C:\Users\isabella.ramirezv\source\repos\PracticasConstructores\PracticasConstructores\obj\Debug\net5.0\PracticasConstructores.csproj.CoreCompileInputs.cache
+C:\Users\isabella.ramirezv\source\repos\PracticasConstructores\PracticasConstructores\obj\Debug\net5.0\PracticasConstructores.dll
+C:\Users\isabella.ramirezv\source\repos\PracticasConstructores\PracticasConstructores\obj\Debug\net5.0\ref\PracticasConstructores.dll
+C:\Users\isabella.ramirezv\source\repos\PracticasConstructores\PracticasConstructores\obj\Debug\net5.0\PracticasConstructores.pdb
+C:\Users\isabella.ramirezv\source\repos\PracticasConstructores\PracticasConstructores\obj\Debug\net5.0\PracticasConstructores.genruntimeconfig.cache
+C:\Users\isabella.ramirezv\source\repos\PracticasConstructores\PracticasConstructores\obj\Debug\net5.0\PracticasConstructores.csproj.AssemblyReference.cache
