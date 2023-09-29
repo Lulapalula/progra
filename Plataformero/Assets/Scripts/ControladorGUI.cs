@@ -18,6 +18,9 @@ public class ControladorGUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        EtiquetaHPHeroe.text = Heroe.hp + "/" + Heroe.hpMax;
+
+        float porcentajeHPHeroe = Heroe.hp / (float)Heroe.hpMax;
+        BarraHPHeroe.fillAmount = porcentajeHPHeroe;
     }
 }
