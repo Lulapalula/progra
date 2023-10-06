@@ -6,10 +6,11 @@ public class ControladorJugador : MonoBehaviour
 {
     public float fuerzaSalto = 10;
     public float velocidadCaminar = 5;
+    public int contador = 2;
+    public bool enPiso = false;
+
     private Rigidbody2D miCuerpo;
     private Animator miAnimador;
-    public bool enPiso = false;
-    private int contadorSaltos = 2;
 
 
     // Start is called before the first frame update
@@ -22,17 +23,16 @@ public class ControladorJugador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        //Lo primero que hago en el update es detectar piso
-        detectarPiso();
         float velVert = miCuerpo.velocity.y;
 
         float movHoriz = Input.GetAxis("Horizontal");
 
+        detectarPiso();
+
         if (movHoriz > 0)
         {//se mueve a la dere
             transform.rotation = Quaternion.Euler(0, 0, 0);
-            miCuerpo.velocity = new Vector3(velocidadCaminar, velVert, 0);//velocidad en esa direccion 
+            miCuerpo.velocity = new Vector3(velocidadCaminar, velVert, 0);
 
             miAnimador.SetBool("CAMINANDO", true);
         }
@@ -49,34 +49,24 @@ public class ControladorJugador : MonoBehaviour
             miCuerpo.velocity = new Vector3(0, velVert, 0);
             miAnimador.SetBool("CAMINANDO", false);
         }
-   
 
-        if (Input.GetButtonDown("Jump"))
+        void detectarPiso()
         {
-            if (enPiso || contadorSaltos > 0)
-            {
-                miCuerpo.velocity = new Vector2(miCuerpo.velocity.x, fuerzaSalto);
-                contadorSaltos--; // Disminuir el contador de saltos.
-            }
+            enPiso = Physics2D.Raycast(transform.position, Vector2.down, 0.1f);//desde donde, en que direccion, que tan largo 
         }
 
-        else
+        
 
-        miAnimador.SetFloat("Vel_VERT", velVert);
-    } //fin update
-
-    void detectarPiso()
-    {
+        if (Input.GetButtonDown("Jump") && (enPiso || contador > 0))
         {
-            enPiso = Physics2D.Raycast(
-                transform.position, //desde donde sale el rayo
-                Vector2.down, //en que direcciòn
-                0.1f //que tan laaaaaaaaaaaaaaaargo
-                );
-            if (enPiso)
-            {
-                contadorSaltos = 1; //reinicio
-            }
+            miCuerpo.velocity = new Vector2(miCuerpo.velocity.x, fuerzaSalto);
+            contador--; // Aumentar el contador cuando salta
         }
+
+        if (enPiso)
+        {
+            contador = 1; // Restablecer el contador cuando toca el suelo
+        }
+
     }
-}//fin de clase
+}
