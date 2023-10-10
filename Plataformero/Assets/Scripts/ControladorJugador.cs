@@ -11,13 +11,14 @@ public class ControladorJugador : MonoBehaviour
 
     private Rigidbody2D miCuerpo;
     private Animator miAnimador;
-
+    private EfectosSonoros misSonidos;
 
     // Start is called before the first frame update
     void Start()
     {
         miCuerpo = GetComponent<Rigidbody2D>();//invocacion del componente 
         miAnimador = GetComponent<Animator>();
+        misSonidos = GetComponent<EfectosSonoros>();
     }
 
     // Update is called once per frame
@@ -61,6 +62,8 @@ public class ControladorJugador : MonoBehaviour
         {
             miCuerpo.velocity = new Vector2(miCuerpo.velocity.x, fuerzaSalto);
             contador--; // Aumentar el contador cuando salta
+
+            misSonidos.reproducir("salto");
         }
 
         if (enPiso)
