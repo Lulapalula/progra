@@ -10,6 +10,7 @@ public class Personaje : MonoBehaviour
     public int vidas = 3;
     public int vidasMinimas = 1;
     public int score = 0;
+    private Animator miAnimador;
 
     public GameObject heridasPrefab;
     public GameObject vidasMenosPrefab;
@@ -18,7 +19,7 @@ public class Personaje : MonoBehaviour
     void Start()
     {
 
-
+        miAnimador = GetComponent<Animator>();
     }
     // Update is called once per frame
     void Update()
@@ -30,6 +31,7 @@ public class Personaje : MonoBehaviour
 
             GameObject efectoVidasMenos = Instantiate(vidasMenosPrefab);
             efectoVidasMenos.transform.position = transform.position;
+            miAnimador.SetTrigger("MUERTO");
         }
     }
     public void hacerDanio(int puntosDanio, GameObject enemigo)
@@ -50,6 +52,7 @@ public class Personaje : MonoBehaviour
 
             GameObject efectoDanio = Instantiate(heridasPrefab);
             efectoDanio.transform.position = transform.position;
+            miAnimador.SetTrigger("DAÑANDO");
 
         }
     }
@@ -57,5 +60,8 @@ public class Personaje : MonoBehaviour
     {
         print(name + " murio intantaneamente " + quien);
         hp = 0;
+
+        miAnimador.SetTrigger("MUERTO");
+
     }
 }
