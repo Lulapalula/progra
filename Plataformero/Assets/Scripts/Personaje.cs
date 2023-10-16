@@ -11,6 +11,7 @@ public class Personaje : MonoBehaviour
     public int vidasMinimas = 1;
     public int score = 0;
     private Animator miAnimador;
+    private EfectosSonoros misSonidos;
 
     public GameObject heridasPrefab;
     public GameObject vidasMenosPrefab;
@@ -18,7 +19,7 @@ public class Personaje : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        misSonidos = GetComponent<EfectosSonoros>();
         miAnimador = GetComponent<Animator>();
     }
     // Update is called once per frame
@@ -32,6 +33,7 @@ public class Personaje : MonoBehaviour
             GameObject efectoVidasMenos = Instantiate(vidasMenosPrefab);
             efectoVidasMenos.transform.position = transform.position;
             miAnimador.SetTrigger("MUERTO");
+            misSonidos.reproducir("muerte");
         }
     }
     public void hacerDanio(int puntosDanio, GameObject enemigo)
@@ -53,6 +55,7 @@ public class Personaje : MonoBehaviour
             GameObject efectoDanio = Instantiate(heridasPrefab);
             efectoDanio.transform.position = transform.position;
             miAnimador.SetTrigger("DAÑANDO");
+            misSonidos.reproducir("daño");
 
         }
     }
@@ -62,6 +65,7 @@ public class Personaje : MonoBehaviour
         hp = 0;
 
         miAnimador.SetTrigger("MUERTO");
-
+        misSonidos.reproducir("splash");
+        misSonidos.reproducir("muerte");
     }
 }

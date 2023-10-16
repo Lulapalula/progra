@@ -22,7 +22,7 @@ public class Mobs : MonoBehaviour
 			_animator.SetBool(AnimatorWalk, true);
 			yield return new WaitForSeconds(1f);
 
-			_animator.transform.localScale = new Vector3(-1, 1, 1);
+			_animator.transform.localScale = new Vector3(12, 13, 1);
 			yield return new WaitForSeconds(1f);
 
 			_animator.SetBool(AnimatorWalk, false);
