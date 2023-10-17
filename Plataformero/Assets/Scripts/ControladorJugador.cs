@@ -56,7 +56,7 @@ public class ControladorJugador : MonoBehaviour
             enPiso = Physics2D.Raycast(transform.position, Vector2.down, 0.1f);//desde donde, en que direccion, que tan largo 
         }
 
-        
+
 
         if (Input.GetButtonDown("Jump") && (enPiso || contador > 0))
         {
@@ -69,6 +69,11 @@ public class ControladorJugador : MonoBehaviour
         if (enPiso)
         {
             contador = 1; // Restablecer el contador cuando toca el suelo
+        }
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            miAnimador.SetTrigger("GOLPEAR");
         }
 
     }
