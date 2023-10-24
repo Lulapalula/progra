@@ -32,6 +32,8 @@ public class EnemigoAgresivo : MonoBehaviour
         Vector3 miPos = this.transform.position;
         Vector3 posHeroe = heroeJugador.transform.position;
         float distanciaHeroe = (miPos - posHeroe).magnitude;
+        Personaje elPerso = otro.GetComponent<Personaje>();
+        otro.tag == "Player
 
         if (cavernicola.estaVivo())
         {
@@ -58,6 +60,7 @@ public class EnemigoAgresivo : MonoBehaviour
             {
                 // Activa la animación de ataque.
                 miAnimador.SetTrigger("Golpear");
+                elPerso.hacerDanio(20, this.gameObject);
             }
 
             else
