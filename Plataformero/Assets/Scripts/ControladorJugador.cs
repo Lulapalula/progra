@@ -12,6 +12,7 @@ public class ControladorJugador : MonoBehaviour
     private Rigidbody2D miCuerpo;
     private Animator miAnimador;
     private EfectosSonoros misSonidos;
+    private Personaje miPersonaje;
 
     // Start is called before the first frame update
     void Start()
@@ -19,18 +20,21 @@ public class ControladorJugador : MonoBehaviour
         miCuerpo = GetComponent<Rigidbody2D>();//invocacion del componente 
         miAnimador = GetComponent<Animator>();
         misSonidos = GetComponent<EfectosSonoros>();
+        miPersonaje = GetComponent<Personaje>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        bool puedoMoverme = miPersonaje.estaVivo() && !miPersonaje.bloqueado;
+
         float velVert = miCuerpo.velocity.y;
 
         float movHoriz = Input.GetAxis("Horizontal");
 
         detectarPiso();
 
-        if (movHoriz > 0)
+        if (movHoriz > 0 && puedoMoverme)
         {//se mueve a la dere
             transform.rotation = Quaternion.Euler(0, 0, 0);
             miCuerpo.velocity = new Vector3(velocidadCaminar, velVert, 0);
@@ -38,7 +42,7 @@ public class ControladorJugador : MonoBehaviour
             miAnimador.SetBool("CAMINANDO", true);
         }
 
-        else if (movHoriz < 0)
+        else if (movHoriz < 0 && puedoMoverme)
         {//se mueve a la iz1
             transform.rotation = Quaternion.Euler(0, 180, 0);
             miCuerpo.velocity = new Vector3(-velocidadCaminar, velVert, 0);
@@ -58,7 +62,7 @@ public class ControladorJugador : MonoBehaviour
 
 
 
-        if (Input.GetButtonDown("Jump") && (enPiso || contador > 0))
+        if (Input.GetButtonDown("Jump") && puedoMoverme)
         {
             miCuerpo.velocity = new Vector2(miCuerpo.velocity.x, fuerzaSalto);
             contador--; // Aumentar el contador cuando salta
@@ -71,7 +75,7 @@ public class ControladorJugador : MonoBehaviour
             contador = 1; // Restablecer el contador cuando toca el suelo
         }
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && puedoMoverme)
         {
             miAnimador.SetTrigger("GOLPEAR");
         }

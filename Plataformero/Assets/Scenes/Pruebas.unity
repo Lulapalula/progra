@@ -235,6 +235,7 @@ GameObject:
   - component: {fileID: 248020921}
   - component: {fileID: 248020920}
   - component: {fileID: 248020919}
+  - component: {fileID: 248020922}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -308,6 +309,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &248020922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248020918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1cdcb4f243931942b5aa4c84ae24d2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  suPersonaje: {fileID: 251482418}
 --- !u!1 &250786436
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,6 +338,7 @@ GameObject:
   - component: {fileID: 250786441}
   - component: {fileID: 250786440}
   - component: {fileID: 250786444}
+  - component: {fileID: 250786445}
   m_Layer: 0
   m_Name: Enemigongo
   m_TagString: Untagged
@@ -489,6 +504,7 @@ MonoBehaviour:
   vidas: 1
   vidasMinimas: 1
   score: 0
+  bloqueado: 0
   heridasPrefab: {fileID: 0}
   vidasMenosPrefab: {fileID: 0}
 --- !u!114 &250786444
@@ -498,12 +514,39 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250786436}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3aff44d72f1a7b3419c50a4d61973c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadCaminar: 2
+--- !u!114 &250786445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250786436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 088d6d8175805514ab5c39f9f233a2fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadCaminar: 3
+  rangoAgro: 3
+  danioMOB: 0
+  distanciaDeAtaque: 2
+--- !u!114 &251482418 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3226054601116516179, guid: 4608f573d80b7ed49b8ca62b3d3226be, type: 3}
+  m_PrefabInstance: {fileID: 134825573}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fa903172781404f97d546ea2ae261a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1205405023
 GameObject:
   m_ObjectHideFlags: 0
