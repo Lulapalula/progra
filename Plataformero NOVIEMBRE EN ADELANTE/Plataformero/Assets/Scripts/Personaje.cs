@@ -129,7 +129,7 @@ public class Personaje : MonoBehaviour
     public void agarrarMoneda(int puntosMoneda, GameObject monedita)
     {
         // Verifica si la monedita tiene el tag "Moneda"
-        if (monedita.CompareTag("Moneda"))
+        if (monedita.CompareTag("Tesoro"))
         {
             // Incrementa el contador de monedas
             monedas += puntosMoneda;
