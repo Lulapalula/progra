@@ -14,11 +14,11 @@ public class Personaje : MonoBehaviour
     public int score = 0;
     public bool bloqueado = false;
 
-    
+
 
     public GameObject heridasPrefab;
     public GameObject vidasMenosPrefab;
-   
+
 
     private Animator miAnimador;
     private EfectosSonoros misSonidos;
@@ -29,7 +29,7 @@ public class Personaje : MonoBehaviour
         miAnimador = GetComponent<Animator>();
         misSonidos = GetComponent<EfectosSonoros>();
 
-        
+
 
     }
     // Update is called once per frame
@@ -58,46 +58,44 @@ public class Personaje : MonoBehaviour
             {
                 hp = 0;
             }
-
             else
             {
                 hp -= puntosDanio;
                 bloqueado = true;
-                //Dentro DE 1.2 SEG se ejecuta el metodo debloquear
+                // Dentro de 1.2 segundos se ejecuta el método desbloquear
                 Invoke("desbloquear", 1);
 
                 miAnimador.SetTrigger("Daño");
                 misSonidos.reproducir("Daño");
             }
 
-            print(name + " recibe danio de " + puntosDanio + " por " + enemigo);
+            print(name + " recibe daño de " + puntosDanio + " por " + enemigo);
 
             GameObject efectoDanio = Instantiate(heridasPrefab);
             efectoDanio.transform.position = transform.position;
 
-            if (hp <= 0 && vidas > 0)
+            if (hp <= 0)
             {
-                vidas--;
-                hp = hpMax;
+                if (vidas > 0)
+                {
+                    vidas = 0;
+                    hp = 0;
 
-                GameObject efectoVidasMenos = Instantiate(vidasMenosPrefab);
-                efectoVidasMenos.transform.position = transform.position;
+                    GameObject efectoVidasMenos = Instantiate(vidasMenosPrefab);
+                    efectoVidasMenos.transform.position = transform.position;
 
-                miAnimador.SetTrigger("Muerte");
-                misSonidos.reproducir("Dead");
-
+                    miAnimador.SetTrigger("Muerte");
+                    misSonidos.reproducir("Dead");
+                }
+                else
+                {
+                    miAnimador.SetTrigger("Muerte");
+                    misSonidos.reproducir("Dead");
+                }
             }
-
-            if (vidas <= 0)
-            {
-                miAnimador.SetTrigger("Muerte");
-                misSonidos.reproducir("Dead");
-
-            }
-
         }
-
     }
+
     public void instaKill(GameObject quien)
     {
         print(name + " murio intantaneamente " + quien);
@@ -105,8 +103,8 @@ public class Personaje : MonoBehaviour
 
         if (vidas > 0)
         {
-            vidas--;
-            hp = hpMax;
+            vidas = 0;
+            hp = 0;
             GameObject efectoVidasMenos = Instantiate(vidasMenosPrefab);
             efectoVidasMenos.transform.position = transform.position;
             miAnimador.SetTrigger("Muerte");
@@ -115,12 +113,13 @@ public class Personaje : MonoBehaviour
 
     }
 
+    //Para demostrar que verdaderamente los enemigos dejan de seguirte, ponlo como comentario, cuidado. -Lulu
     private void reiniciarEscena()
     {
-        // Recarga la escena actual para reiniciar el juego.
+        //Recarga la escena actual para reiniciar el juego.
         Debug.Log("Reiniciando la escena...");
         SceneManager.LoadScene("Level1");
     }
 
-    
+
 }

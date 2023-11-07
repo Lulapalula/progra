@@ -210,7 +210,7 @@ Transform:
   m_GameObject: {fileID: 248020918}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -5.9, y: 0.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -251,7 +251,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 566973991097755374, guid: aab0ab9fe6aacf045bb3a884d672063e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -25.14
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 566973991097755374, guid: aab0ab9fe6aacf045bb3a884d672063e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -290,12 +290,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1727379818108807148, guid: aab0ab9fe6aacf045bb3a884d672063e, type: 3}
+      propertyPath: hp
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1727379818108807148, guid: aab0ab9fe6aacf045bb3a884d672063e, type: 3}
       propertyPath: vidas
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1727379818108807148, guid: aab0ab9fe6aacf045bb3a884d672063e, type: 3}
       propertyPath: vidasMinimas
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4062433146655161384, guid: aab0ab9fe6aacf045bb3a884d672063e, type: 3}
       propertyPath: m_Name
@@ -830,6 +834,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4819070662947768382, guid: c8949e16c85abcd48950e8a35059dcdc, type: 3}
+      propertyPath: danioMOB
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 7272692123415910160, guid: c8949e16c85abcd48950e8a35059dcdc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.99
@@ -984,6 +992,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4984850035372285576, guid: b4eeaa16567807540845add742f635a3, type: 3}
+      propertyPath: velocidadCaminar
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8835145777280836329, guid: b4eeaa16567807540845add742f635a3, type: 3}
       propertyPath: m_Name
       value: Slime Spiked
@@ -1010,6 +1022,10 @@ PrefabInstance:
       value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 502148186482677853, guid: 0d0ca51efbd1bc9449cd7339b5e5d50b, type: 3}
+      propertyPath: bloqueado
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 502148186482677853, guid: 0d0ca51efbd1bc9449cd7339b5e5d50b, type: 3}
       propertyPath: vidasMinimas
       value: 1
       objectReference: {fileID: 0}
@@ -1026,12 +1042,16 @@ PrefabInstance:
       value: (MOB)Mushroom
       objectReference: {fileID: 0}
     - target: {fileID: 2045699393720722499, guid: 0d0ca51efbd1bc9449cd7339b5e5d50b, type: 3}
+      propertyPath: danioMOB
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045699393720722499, guid: 0d0ca51efbd1bc9449cd7339b5e5d50b, type: 3}
       propertyPath: rangoAgro
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2045699393720722499, guid: 0d0ca51efbd1bc9449cd7339b5e5d50b, type: 3}
       propertyPath: velocidadCaminar
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2128377426846616772, guid: 0d0ca51efbd1bc9449cd7339b5e5d50b, type: 3}
       propertyPath: m_LocalPosition.x

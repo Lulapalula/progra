@@ -441,11 +441,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3189411643593412976, guid: 6a5b996e118926c4296b175da2b68502, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 75.79
+      value: 76.14
       objectReference: {fileID: 0}
     - target: {fileID: 3189411643593412976, guid: 6a5b996e118926c4296b175da2b68502, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.9509256
+      value: -2.04
       objectReference: {fileID: 0}
     - target: {fileID: 3189411643593412976, guid: 6a5b996e118926c4296b175da2b68502, type: 3}
       propertyPath: m_LocalPosition.z
@@ -734,6 +734,10 @@ PrefabInstance:
     - target: {fileID: 1852391811998364619, guid: 0d0ca51efbd1bc9449cd7339b5e5d50b, type: 3}
       propertyPath: m_Name
       value: (MOB)Mushroom
+      objectReference: {fileID: 0}
+    - target: {fileID: 2045699393720722499, guid: 0d0ca51efbd1bc9449cd7339b5e5d50b, type: 3}
+      propertyPath: danioMOB
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2128377426846616772, guid: 0d0ca51efbd1bc9449cd7339b5e5d50b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31735,7 +31739,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646780127}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -32418,11 +32422,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 566973991097755374, guid: aab0ab9fe6aacf045bb3a884d672063e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 65.7
+      value: 12.5
       objectReference: {fileID: 0}
     - target: {fileID: 566973991097755374, guid: aab0ab9fe6aacf045bb3a884d672063e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9
+      value: 3.58
       objectReference: {fileID: 0}
     - target: {fileID: 566973991097755374, guid: aab0ab9fe6aacf045bb3a884d672063e, type: 3}
       propertyPath: m_LocalPosition.z

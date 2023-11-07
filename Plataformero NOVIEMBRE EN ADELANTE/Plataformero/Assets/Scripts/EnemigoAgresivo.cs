@@ -15,6 +15,7 @@ public class EnemigoAgresivo : MonoBehaviour
     private GameObject heroeJugador;
     private EfectosSonoros misSonidos;
     private Personaje elPerso;
+    private bool personajeVivo = true; // Agrega esta variable
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +31,9 @@ public class EnemigoAgresivo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (elPerso.estaVivo()) // Verifica si el personaje está vivo
+        personajeVivo = elPerso.estaVivo(); // Actualiza el estado del personaje vivo
+
+        if (personajeVivo)
         {
             Vector3 miPos = this.transform.position;
             Vector3 posHeroe = heroeJugador.transform.position;
@@ -70,10 +73,7 @@ public class EnemigoAgresivo : MonoBehaviour
                 miCuerpo.velocity = Vector3.zero;
                 miAnimador.SetBool("CAMINANDO", false);
             }
-
-
         }
-
         else
         {
             heroeCerca = false;
@@ -84,7 +84,7 @@ public class EnemigoAgresivo : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (elPerso.estaVivo()) // Verifica si el personaje está vivo
+        if (personajeVivo) // Verifica si el personaje está vivo
         {
             GameObject otro = collision.gameObject;
             if (otro.tag == "Player")
@@ -95,5 +95,6 @@ public class EnemigoAgresivo : MonoBehaviour
             }
         }
     }
-
 }
+
+
