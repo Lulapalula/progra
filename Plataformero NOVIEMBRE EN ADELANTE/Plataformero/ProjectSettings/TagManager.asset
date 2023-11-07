@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MOB
   - FxTemporaire
+  - Tesoro
   layers:
   - Default
   - TransparentFX

@@ -10,6 +10,7 @@ public class ControladorGUI : MonoBehaviour
     public Image barraHPHeroe;
     public Text scoreHeroe;
     public Text vidasHeroe;
+    public Text monedasHeroe;
 
     public Personaje villano;
     public Text etiquetaHPVillano;
@@ -39,6 +40,7 @@ public class ControladorGUI : MonoBehaviour
         // Muestro el score del héroe
         scoreHeroe.text = heroe.score.ToString(); // Convierte el entero a cadena
 
+        monedasHeroe.text = heroe.monedas.ToString(); // Convierte el entero a cadena
 
         //muestro en el texto el hp del villano 
         etiquetaHPVillano.text = villano.hp + "/" + villano.hpMax;

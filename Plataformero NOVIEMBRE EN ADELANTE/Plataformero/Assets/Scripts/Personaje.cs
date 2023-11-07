@@ -12,6 +12,7 @@ public class Personaje : MonoBehaviour
     public int vidas = 3;
     public int vidasMinimas = 1;
     public int score = 0;
+    public int monedas = 0;
     public bool bloqueado = false;
 
 
@@ -111,7 +112,11 @@ public class Personaje : MonoBehaviour
             misSonidos.reproducir("Dead");
         }
 
+
+
     }
+
+
 
     //Para demostrar que verdaderamente los enemigos dejan de seguirte, ponlo como comentario, cuidado. -Lulu
     private void reiniciarEscena()
@@ -121,5 +126,15 @@ public class Personaje : MonoBehaviour
         SceneManager.LoadScene("Level1");
     }
 
+    public void agarrarMoneda(int puntosMoneda, GameObject monedita)
+    {
+        // Verifica si la monedita tiene el tag "Moneda"
+        if (monedita.CompareTag("Moneda"))
+        {
+            // Incrementa el contador de monedas
+            monedas += puntosMoneda;
+            Debug.Log(name + " recogió una moneda. Total de monedas: " + monedas);
 
+        }
+    }
 }
