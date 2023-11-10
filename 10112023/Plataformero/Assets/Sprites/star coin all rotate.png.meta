@@ -1,0 +1,323 @@
+fileFormatVersion: 2
+guid: 812d00af109cb2e489019a9eb9be504a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1500
+  spriteBorder: {x: 131, y: 3936, z: 4005, w: 177}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: star coin all rotate_0
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 3970
+        width: 2276
+        height: 2265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551e5090876350547a65540c0b533768
+      internalID: -497951814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star coin all rotate_1
+      rect:
+        serializedVersion: 2
+        x: 2656
+        y: 3970
+        width: 1982
+        height: 2276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 23}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ee222dc9c61e941bbad44dc3599995
+      internalID: -1157847624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star coin all rotate_2
+      rect:
+        serializedVersion: 2
+        x: 4944
+        y: 3925
+        width: 1302
+        height: 2264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 102, y: 0, z: 125, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf9b86375d705543b9c22c41bb526fa
+      internalID: -249947434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star coin all rotate_3
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 1230
+        width: 362
+        height: 2276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f522e65e5273e47bf9418507379df3
+      internalID: 1485633398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star coin all rotate_4
+      rect:
+        serializedVersion: 2
+        x: 2656
+        y: 1230
+        width: 1054
+        height: 2264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc140419b3ba144d87dad895724741d
+      internalID: 1271995493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: star coin all rotate_5
+      rect:
+        serializedVersion: 2
+        x: 4276
+        y: 1218
+        width: 1925
+        height: 2310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1c28537a252304b8d23eeb0715c57f
+      internalID: 135410014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: 362.5, y: 293.75}
+      - {x: -284.375, y: 293.75}
+      - {x: -543.75, y: 171.875}
+      - {x: -543.75, y: -1268.75}
+      - {x: -468.75, y: -1943.75}
+      - {x: -403.125, y: -1965.625}
+      - {x: 287.5, y: -1965.625}
+      - {x: 531.25, y: -1600}
+      - {x: 531.25, y: -71.875}
+      - {x: 509.375, y: 168.75}
+    - - {x: -1959.375, y: 312.5}
+      - {x: -1984.375, y: 225}
+      - {x: -1984.375, y: -1946.875}
+      - {x: -1628.125, y: -1946.875}
+      - {x: -1628.125, y: 312.5}
+    - - {x: 1253.125, y: 325}
+      - {x: 1059.375, y: 265.625}
+      - {x: 1059.375, y: -1743.75}
+      - {x: 1087.5, y: -1934.375}
+      - {x: 3015.625, y: -1934.375}
+      - {x: 3034.375, y: -1790.625}
+      - {x: 3034.375, y: 225}
+      - {x: 2868.75, y: 325}
+    - - {x: 1962.5, y: 2984.375}
+      - {x: 1853.125, y: 2771.875}
+      - {x: 1853.125, y: 1175}
+      - {x: 2031.25, y: 728.125}
+      - {x: 2925, y: 728.125}
+      - {x: 2925, y: 2871.875}
+      - {x: 2581.25, y: 2984.375}
+    - - {x: -137.5, y: 3018.75}
+      - {x: -237.5, y: 2946.875}
+      - {x: -550, y: 2362.5}
+      - {x: -550, y: 1296.875}
+      - {x: -231.25, y: 759.375}
+      - {x: 731.25, y: 759.375}
+      - {x: 1106.25, y: 828.125}
+      - {x: 1421.875, y: 1103.125}
+      - {x: 1421.875, y: 2653.125}
+      - {x: 1178.125, y: 3018.75}
+    - - {x: -1331.25, y: 3034.375}
+      - {x: -2740.625, y: 3034.375}
+      - {x: -3046.875, y: 2728.125}
+      - {x: -3046.875, y: 1021.875}
+      - {x: -3028.125, y: 906.25}
+      - {x: -2615.625, y: 775}
+      - {x: -1518.75, y: 775}
+      - {x: -878.125, y: 1015.625}
+      - {x: -800, y: 1418.75}
+      - {x: -800, y: 2562.5}
+      - {x: -931.25, y: 2956.25}
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      star coin all rotate_0: -497951814
+      star coin all rotate_1: -1157847624
+      star coin all rotate_2: -249947434
+      star coin all rotate_3: 1485633398
+      star coin all rotate_4: 1271995493
+      star coin all rotate_5: 135410014
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
