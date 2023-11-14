@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Personaje : MonoBehaviour
 {
+    private GameManager gameManager;
     public int hp = 70;
     public int hpMax = 100;
     public int vidas = 3;
@@ -21,6 +22,7 @@ public class Personaje : MonoBehaviour
 
     void Start()
     {
+        gameManager = FindObjectOfType<GameManager>();
         miAnimador = GetComponent<Animator>();
         misSonidos = GetComponent<EfectosSonoros>();
     }
@@ -76,12 +78,12 @@ public class Personaje : MonoBehaviour
                 efectoVidasMenos.transform.position = transform.position;
 
                 miAnimador.SetTrigger("Muerte");
-                misSonidos.reproducir("Dead");               
+                misSonidos.reproducir("Dead");
             }
 
             if (vidas <= 0)
             {
-              
+
                 miAnimador.SetTrigger("Muerte");
                 misSonidos.reproducir("Dead");
             }
@@ -121,6 +123,13 @@ public class Personaje : MonoBehaviour
     private void destruirObjeto()
     {
         Destroy(gameObject);
+    }
+
+    public void Respawn(Vector3 respawnPosition)
+    {
+        transform.position = respawnPosition;
+
+
     }
 }
 

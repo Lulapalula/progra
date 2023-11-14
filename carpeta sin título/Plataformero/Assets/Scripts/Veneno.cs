@@ -6,7 +6,7 @@ public class Veneno : MonoBehaviour
 {
     public int danio;
     public float duracion;
-    private bool potiUsada;
+    private bool posionUsada;
 
     private Personaje elPerso;
     private Animator miAnimador;
@@ -15,7 +15,7 @@ public class Veneno : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        potiUsada = false;
+        posionUsada = false;
         miAnimador = GetComponent<Animator>();
     }
 
@@ -31,16 +31,16 @@ public class Veneno : MonoBehaviour
 
         if (otroObjeto.tag == "Player")
         {
-            potiUsada = true;
+            posionUsada = true;
 
             print(name + "detecte colision con" + collision.gameObject);
-            //con estas insrtucciones obtengo el componente personaje del player
+            
 
             elPerso = otroObjeto.GetComponent<Personaje>();
 
-            if (potiUsada == true)
+            if (posionUsada == true)
             {
-                //con esto le mando el daño al personaje por 20 puntos y le dgo qye gye este objeto el que lo daño 
+                
                 InvokeRepeating("danioVeneno", 0, 1);
                 miAnimador.SetTrigger("Desaparece");
                 Invoke("destruirObjeto", duracion);
@@ -51,7 +51,7 @@ public class Veneno : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        potiUsada = false;
+        posionUsada = false;
     }
     public void danioVeneno()
     {

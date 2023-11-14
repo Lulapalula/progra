@@ -5,16 +5,16 @@ using UnityEngine;
 public class CofreItems : MonoBehaviour
 {
     public bool contacto;
-    private bool cofreAbierto; //Si el cofre esta abierto o no
+    private bool cofreAbierto;
 
     private Animator miAnimador;
     public GameObject chestButton;
-    public GameObject itemPrefab; // GameObject para aceptar cualquier prefab
+    public GameObject itemPrefab;
 
     // Start is called before the first frame update
     void Start()
     {
-        chestButton.SetActive(false); //desactiva el sprite de botton del guid
+        chestButton.SetActive(false); 
         cofreAbierto = false; 
 
         miAnimador = GetComponent<Animator>();
@@ -28,10 +28,9 @@ public class CofreItems : MonoBehaviour
             miAnimador.SetTrigger("Abrir");
 
 
-            Vector3 cofrePosition = transform.position; ; //calcula la posicion del cofre
-            GameObject newItem = Instantiate(itemPrefab, cofrePosition, Quaternion.identity); //instanciar el prefab en la posicion del player 
-            
-            cofreAbierto = true; // si se presiono fire 1 se abre el cofre 
+            Vector3 cofrePosition = transform.position; ; 
+            GameObject newItem = Instantiate(itemPrefab, cofrePosition, Quaternion.identity); 
+            cofreAbierto = true; 
 
             Invoke("destruirObjeto", 6);
         }
@@ -43,14 +42,14 @@ public class CofreItems : MonoBehaviour
 
         if (otro.CompareTag("Player"))
         {
-            // Verifica si la colisión ocurrió con el CapsuleCollider2D del jugador
+           
             CapsuleCollider2D playerCollider = otro.GetComponent<CapsuleCollider2D>();
 
             if (playerCollider != null && collision == playerCollider)
             {
                 print(name + " detectó colisión con " + otro);
 
-                if (!cofreAbierto)//si el cofre no esta abierto salta el botton del guid, si esta abierno entonces no 
+                if (!cofreAbierto) 
                 {
                     chestButton.SetActive(true);
                     contacto = true;
